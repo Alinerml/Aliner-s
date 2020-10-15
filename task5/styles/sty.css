@@ -1,0 +1,84 @@
+.top{
+    margin: 0px;
+    padding: 0px;
+    height: 65px;
+    font-weight: 100%;
+    width: 100%;
+}
+.top-p{
+    float: left;
+    padding-left: 40px;
+    padding-top: 11px;
+    
+}
+
+.daohang>li{
+    float: right;
+    color: rgb(12, 2, 2);
+    
+    font-size: 12px;
+    padding-right: 12px;
+    padding-left: 5px;
+    padding-top: 20px;
+    margin-right: 5px ;
+}
+.wenzhang {
+    border:2px solid rgb(255, 255, 255);
+    margin:40px 470px 20px 20px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(126, 131, 136) 1px 1px;
+    
+}
+.images{
+    height: 1100px;
+}
+
+.tupian{
+    border: 1px solid rgb(175, 175, 175);
+    padding: 8px;
+    margin: 15px;
+    width: 150px;
+    text-align: center;
+    float: left;
+}
+.tupian img{
+    display: inline-block;
+     width:auto;
+     height:auto; 
+     max-width:100%; 
+     max-height:100%;
+}
+.table1 th,.table1 tr,.table1 td,.table1{
+    border: 1px solid rgb(185, 185, 185);
+    border-collapse: collapse;
+}
+.table2 tr{
+    text-align: left;
+}
+.first{
+    text-align: right;
+}
+li>a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.end{
+    width: 1400px;
+    height: 40px;
+    background-color: royalblue;
+    border-radius: 10px;
+
+}
+.wenzhang2{
+    width: 380px;
+    float: right;
+    border:2px solid rgb(255, 255, 255);
+    margin:40px 20px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(126, 131, 136) 1px 1px;
+}
+label,#like{
+    font-size: 13px;
+}
