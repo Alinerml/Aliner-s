@@ -1,0 +1,49 @@
+.grid-container{
+    width: 100%; 
+    max-width: 1200px;     
+  }
+  * {
+    margin: 0;
+  }
+  .row:before, 
+  .row:after {
+    content:"";
+    display: block;
+    clear:both;
+  }
+.row{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+}
+  [class*='col-'] {
+    float: left; 
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-12 {width: 100%;}
+    .int{
+      border: 1px solid #999;
+      background: grey;
+      height: 50px;
+    }
+  }
+  
+  /*-- 屏幕宽度大于768px -- */ 
+  @media screen and (min-width: 768px) {
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}   
+    .col-md-6 {width: 50%;}
+    .int{
+      border: 1px solid #999;
+      background: grey;
+      height: 50px;
+    }
+  }

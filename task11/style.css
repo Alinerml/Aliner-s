@@ -1,0 +1,178 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif; /*使用无衬线字体*/
+}
+
+a, img {
+    -webkit-touch-callout: none; /*禁止长按链接与图片弹出菜单*/
+}
+
+html, body {
+    -webkit-user-select: none; /*禁止选中文本*/
+    user-select: none;
+    width: 100%;
+    height: 100%;
+}
+.top{
+    background: rgb(82, 213, 236);
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    height: 60px;
+    line-height: 60px;
+}
+.返回{
+    font-size: 25px;
+    float: left;
+    margin-left: 15px;
+}
+.导航{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 18px;
+}
+.导航1{
+    font-size: 25px;
+    color: rgb(212, 212, 212);
+    text-align: center;
+}
+.bar1{
+    width: 80px;
+    height: 4px;
+    margin-top: 10px;
+    float: bottom;
+    background:  rgb(82, 213, 236);
+}
+.pic1{
+    width: 100%;
+    background-size: contain;
+}
+.img{
+    overflow: hidden;
+    width:100%;
+    height: 0;
+    padding-bottom: 50%;
+}
+.biaoqian{
+    display:flex;
+    justify-content: space-around;
+}
+.标签{
+    width: 20%;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+}
+.标签 img{
+    width: 80%;
+    height: auto;
+}
+.bar2{
+    background-color: rgb(204, 204, 204);
+    width: 100%;
+    height: 2px;
+    margin-top: 10px;
+}
+.分栏{
+    width: 100%;
+    height: 44%;
+    display: flex;
+    justify-content: space-between;
+}
+.bar3{
+    width: 2px;
+    margin-top: 1.5%;
+    background: rgb(207, 207, 207);
+}
+.pic2{
+    width: 33%;
+    text-align: center;
+}
+.pic2 img{
+    width: 65%;
+    height: 50%;
+    height: auto;;
+}
+.gap{
+    width: 100%;
+    height: 20px;
+    background-color: rgb(201, 201, 201);
+    margin: 10px 0;
+}
+.bar4{
+    width: 100%;
+    height: 2px;
+    margin-top: 5px;
+    background: rgb(206, 206, 206);
+}
+.pics img{
+    width: 100%;
+    height: auto;
+}
+.pics{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.wenan{
+    width: 100%;
+    height: 41%;
+    margin: 10px;
+    font-size: 20px;
+    color: rgb(224, 224, 224);
+    background-color: rgb(238, 238, 238);
+}
+.a{
+    width: 30%;
+    
+}
+.b{
+    width: 30%;
+    margin: 10px;
+}
+.wenzhang{
+    display: flex;
+    justify-self: start;
+    position: relative;
+}
+#first{
+    font-size: 22px;
+}
+#second{
+    position: absolute;
+    font-size: 19px;
+    bottom:0;
+}
+.pig{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+.pig img{
+    width: 50%;
+}
+#foot{
+    width: 100%;
+    height: 50px;
+    background: rgb(230, 230, 230);
+}
+.qwe{
+    color: rgb(209, 209, 209);
+    font-size: 19px;
+}
+.分栏一{
+    font-size: 30px;
+    font-weight: bold;
+}
+.分栏标题{
+    font-size: 20px;
+    color: rgb(207, 207, 207);
+}
+.block1{
+    font-size: 35px;
+    line-height: 70px;
+    color: rgb(209, 209, 209);
+}
+.end{
+    width: 100%;
+}

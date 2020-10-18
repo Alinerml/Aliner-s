@@ -1,0 +1,90 @@
+table{
+    border-collapse: collapse;
+    text-align: left;
+
+}
+th,td{
+    border: 2px solid rgb(255, 255, 255);
+}
+th{
+    background: black;
+    color: rgb(255, 255, 255);
+}
+tr:nth-child(odd){
+    background: #ccc;
+}
+tr:nth-child(2),tr:nth-child(3),tr:nth-child(4){
+    color: red;
+}
+tr:nth-child(even)>:nth-child(2){
+    color: red;
+}
+.a{
+    width: 200px;
+    transition: width 1s;
+}
+.a:focus{
+    width: 400px;
+}
+.tupian{
+   position: relative;
+   width:250px;
+   height: 150px;
+   margin-top:10px;
+   overflow: hidden;
+ }
+ .pics{
+   position:absolute;
+   left: 0;
+   width:800px;
+   height:150px;
+   animation: tupian linear 12s infinite;
+ }
+ @keyframes tupian{
+   0%{ left: 0; }
+   30%{ left: 0; }
+   60%{ left: -300px; }
+   95%{ left: -600px; }
+   100%{ left: 0; }
+ }
+ .pic{
+   position:absolute;
+   width:250px;
+   height:150px;
+ }
+ #one{
+   background-color:#2f00ff;
+   left: 0;
+ }
+ #two{
+   background-color:#1eff00;
+   left: 300px;
+ }
+ #three{
+   background-color:#ff0000;
+   left:600px;
+ }
+ .abc{
+   display: inline-block;
+   width:30px;
+   height: 30px;
+   margin:0;
+   position: relative;
+   top:-30px;
+   left: 140px;
+   background-color: rgba(0,0,0,0.5);
+   color:white;
+   line-height: 30px;
+ }
+ .qwe1:target{
+   left: 0;
+   animation: .2s 1;
+ }
+ .qwe2:target{
+   left:0; 
+   animation: .2s 1;  
+ }
+ .qwe3:target{
+   left:0;
+   animation: .2s 1;      
+ }

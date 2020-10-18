@@ -1,0 +1,504 @@
+.red {
+    background-color: rgb(212, 93, 92);
+    position: absolute;
+    left: 45px;
+    top: 0px;
+    width: 110px;
+    height: 61px;
+    z-index: 6;
+  }
+.back {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 980px;
+    height: 1386px;
+    z-index: 2;
+  }
+.date {
+    font-size: 12px;
+    font-family: "SimHei";
+    color: rgb(212, 93, 92);
+    line-height: 1.167;
+    position: absolute;
+    left: 893.625px;
+    top: 45px;
+    z-index: 46;
+}
+.topbar {
+  background-color: rgb(147, 142, 140);
+  position: absolute;
+  left: 45px;
+  top: 61px;
+  width: 892px;
+  height: 2px;
+  z-index: 56;
+}
+.左上文字 {
+  font-size: 12px;
+  font-family: "SimHei";
+  color: rgb(255, 255, 255);
+  line-height: 1.167;
+  position: absolute;
+  left: 30px;
+  top: 45px;
+  z-index: 47;
+}
+.pict{
+  background-image: url(1.gif);
+  position: absolute;
+  left: 44px;
+  top: 97px;
+  width: 641px;
+  height: 301px;
+  z-index: 51;
+}
+.绿色遮罩 {
+  background-image: url(绿色遮罩.png);
+  opacity: 0.502;
+  position: absolute;
+  left: 44px;
+  top: 97px;
+  width: 191px;
+  height: 301px;
+  z-index: 53;
+}
+.红色遮罩 {
+  background-image: url("红色遮罩.png");
+  opacity: 0.502;
+  position: absolute;
+  left: 494px;
+  top: 97px;
+  width: 191px;
+  height: 301px;
+  z-index: 52;
+}
+.bar1 {
+  background-color: rgb(204, 128, 145);
+  position: absolute;
+  left: 733px;
+  top: 98px;
+  width: 202px;
+  height: 2px;
+  z-index: 58;
+}
+.word1 {
+  font-size: 24px;
+  font-family: "Microsoft YaHei";
+  color: rgb(4, 0, 0);
+  text-decoration: underline;
+  font-variant: small-caps;
+  line-height: 1.25;
+  position: absolute;
+  left: 733px;
+  top: 110.421px;
+  z-index: 68;
+}
+.word2 {
+  font-size: 12px;
+  font-family: "KaiTi";
+  color: rgb(103, 103, 103);
+  line-height: 0.833;
+  position: absolute;
+  left: 732.812px;
+  top: 179.034px;
+  z-index: 69;
+}
+.word3 {
+  font-size: 116px;
+  font-family: "Microsoft YaHei";
+  color: rgb(117, 184, 107);
+  line-height: 1;
+  transform: matrix( 0.99264334847157,0,0,0.99080793420416,0,0);
+  position: absolute;
+  left: 717.152px;
+  top: 220.442px;
+  z-index: 64;
+}
+.word4 {
+  font-size: 55px;
+  font-family: "Microsoft YaHei";
+  color: rgb(204, 128, 145);
+  line-height: 1;
+  position: absolute;
+  left: 738px;
+  top: 340.842px;
+  z-index: 65;
+}
+.css {
+  font-size: 21px;
+  font-family: "Microsoft YaHei";
+  color: rgb(204, 128, 145);
+  line-height: 1;
+  position: absolute;
+  left: 822px;
+  top: 360.94px;
+  z-index: 66;
+}
+.cssssccsccscssc {
+  font-size: 12px;
+  font-family: "Microsoft YaHei";
+  color: rgba(35, 24, 21, 0.4);
+  line-height: 1.167;
+  position: absolute;
+  left: 822px;
+  top: 378.709px;
+  z-index: 67;
+}
+.What {
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  color: rgb(65, 140, 89);
+  text-decoration: underline;
+  line-height: 0.524;
+  position: absolute;
+  left: 43.995px;
+  top: 450.479px;
+  z-index: 31;
+}
+.When {
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  color: rgb(210, 153, 79);
+  text-decoration: underline;
+  line-height: 0.524;
+  position: absolute;
+  left: 298.995px;
+  top: 450.479px;
+  z-index: 32;
+}
+.How {
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  color: rgb(204, 118, 128);
+  text-decoration: underline;
+  line-height: 0.524;
+  position: absolute;
+  left: 532px;
+  top: 450.479px;
+  z-index: 33;
+}
+.前端1 {
+  font-size: 12px;
+  font-family: "SimSun";
+  color: rgb(118, 119, 119);
+  line-height: 1.333;
+  position: absolute;
+  left: 44.484px;
+  top: 480.689px;
+  z-index: 35;
+  width: 220px;
+}
+.前端2 {
+  font-size: 12px;
+  font-family: "SimSun";
+  color: rgb(118, 119, 119);
+  line-height: 1.333;
+  position: absolute;
+  left: 300.485px;
+  top: 480.689px;
+  z-index: 36;
+  width: 200px;
+}
+.前端3 {
+  font-size: 12px;
+  font-family: "SimSun";
+  color: rgb(118, 119, 119);
+  line-height: 1.333;
+  position: absolute;
+  left: 533.484px;
+  top: 480.689px;
+  z-index: 37;
+  width: 200px;
+}
+.wwh{
+  font-size: 12px;
+  font-family: "Microsoft YaHei";
+  color: rgba(35, 24, 21, 0.702);
+  line-height: 1.75;
+  text-align: left;
+  position: absolute;
+  left: 536px;
+  top: 565.211px;
+  z-index: 34;
+  width: 115px;
+}
+.sign {
+  line-height: 0.547;
+  position: absolute;
+  left: 42.844px;
+  top: 724.319px;
+  z-index: 40;
+  width: 350px;
+}
+.da{
+  font-style: italic;
+  font-size: 72px;
+  font-family: "SimHei";
+  color: rgb(245, 227, 39);
+}
+.xiao{
+  font-size: 42px;
+  color: #11456b;
+  font-family: "SimHei";
+  line-height: 38px;
+}
+.前端技术领域 {
+  font-size: 33px;
+  font-family: "SimHei";
+  color: rgb(17, 69, 107);
+  line-height: 1;
+  position: absolute;
+  left: 42.704px;
+  top: 815.969px;
+  z-index: 41;
+}
+.前{
+  font-size: 70px;
+  font-family: "Microsoft YaHei";
+  color: rgb(245, 227, 39);
+  line-height: 0.571;
+  float: left;
+}
+.前端4 {
+  font-size: 12px;
+  font-family: "SimSun";
+  color: rgba(118, 119, 119, 0.702);
+  line-height: 2.3;
+  z-index: 42;
+  
+}
+.bar2 {
+  background-color: rgb(16, 69, 107);
+  position: absolute;
+  left: 44px;
+  top: 860px;
+  width: 415px;
+  height: 2px;
+  z-index: 59;
+}
+.block{
+  position: absolute;
+  left: 44px;
+  top: 913.995px;
+  z-index: 43;
+  width: 410px;
+  height: 500px;
+}
+.配图3 {
+  background-image: url(配图三.png);
+  float: right;
+  margin-top: 50px;
+  width: 167px;
+  height: 288px;
+  z-index: 22;
+}
+.配图二 {
+  background-image: url("配图二.png");
+  opacity: 0.702;
+  position: absolute;
+  left: 478px;
+  top: 681px;
+  width: 458px;
+  height: 257px;
+  z-index: 23;
+}
+.tiao {
+  background-color: rgb(4, 0, 0);
+  opacity: 0.4;
+  position: absolute;
+  left: 478px;
+  top: 878px;
+  width: 458px;
+  height: 60px;
+  z-index: 24;
+}
+.前端技术 {
+  font-size: 26px;
+  font-family: "Microsoft YaHei";
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  position: absolute;
+  left: 531px;
+  top: 901.707px;
+  z-index: 27;
+}
+.前端技术前端技术 {
+  font-size: 12px;
+  font-family: "Microsoft YaHei";
+  color: rgb(114, 177, 106);
+  line-height: 1;
+  transform: scale(1.4, 1);
+  position: absolute;
+  left: 662.458px;
+  top: 911.711px;
+  z-index: 28;
+}
+.bar3 {
+  background-color: rgb(114, 177, 106);
+  position: absolute;
+  left: 516px;
+  top: 886px;
+  width: 3px;
+  height: 44px;
+  z-index: 60;
+}
+.block2 {
+  background-color: rgb(238, 237, 214);
+  position: absolute;
+  left: 478px;
+  top: 968px;
+  width: 458px;
+  height: 318px;
+  z-index: 4;
+}
+.block3 {
+  background-color: rgb(212, 93, 92);
+  position: absolute;
+  left: 478px;
+  top: 1125px;
+  width: 260px;
+  height: 160px;
+  z-index: 5;
+}
+.point{
+  background-image: url("_路径_ + _路径_ + _路径_.png");
+  position: absolute;
+  left: 509px;
+  top: 1006px;
+  width: 10px;
+  height: 89px;
+  z-index: 11;
+}
+.word5 {
+  font-size: 16px;
+  font-family: "SimSun";
+  color: rgb(90, 91, 91);
+  line-height: 40px;
+  position: absolute;
+  left: 526.125px;
+  top: 990.25px;
+  z-index: 9;
+  width: 370px;
+}
+.word6 {
+  font-size: 12px;
+  font-family: "SimSun";
+  color: rgb(90, 91, 91);
+  line-height: 40px;
+  text-align: right;
+  position: absolute;
+  left: 877.266px;
+  top: 990.529px;
+  z-index: 10;
+  width: 38px;
+}
+._0 {
+  font-size: 110px;
+  font-family: "Microsoft YaHei";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  position: absolute;
+  left: 487px;
+  top: 1144.684px;
+  z-index: 14;
+}
+.bar4 {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 556px;
+  top: 1165px;
+  width: 2px;
+  height: 86px;
+  z-index: 61;
+}
+.word7 {
+  font-size: 21px;
+  font-family: "SimHei";
+  color: rgb(255, 255, 255);
+  line-height: 1.143;
+  position: absolute;
+  left: 565.109px;
+  top: 1167.062px;
+  z-index: 12;
+}
+.word8 {
+  font-size: 12px;
+  font-family: "SimHei";
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  position: absolute;
+  left: 566.343px;
+  top: 1227.938px;
+  z-index: 13;
+}
+.dot{
+  font-size: 72px;
+  font-family: "SimHei";
+  color: rgb(212, 93, 92);
+  line-height: 0.083;
+  position: absolute;
+  left: 697.75px;
+  top: 1166.793px;
+  z-index: 18;
+}
+.dot2{
+  font-size: 72px;
+  font-family: "SimHei";
+  color: rgb(212, 93, 92);
+  line-height: 0.083;
+  position: absolute;
+  left: 713.75px;
+  top: 1166.793px;
+  z-index: 19;
+}
+.word9 {
+  font-size: 14px;
+  font-family: "SimHei";
+  color: rgb(90, 91, 91);
+  line-height: 1.143;
+  position: absolute;
+  left: 752.188px;
+  top: 1143.593px;
+  z-index: 15;
+}
+.dot3 {
+  font-size: 72px;
+  font-family: "SimHei";
+  color: rgb(212, 93, 92);
+  line-height: 0.083;
+  position: absolute;
+  left: 883.093px;
+  top: 1259.794px;
+  z-index: 16;
+}
+.dot4{
+  font-size: 72px;
+  font-family: "SimHei";
+  color: rgb(212, 93, 92);
+  line-height: 0.083;
+  position: absolute;
+  left: 898.094px;
+  top: 1259.794px;
+  z-index: 17;
+}
+.bar5 {
+  background-color: rgb(147, 142, 140);
+  position: absolute;
+  left: 44px;
+  top: 1326px;
+  width: 892px;
+  height: 1px;
+  z-index: 57;
+}
+.foot {
+  font-size: 12px;
+  font-family: "SimHei";
+  color: rgb(212, 93, 92);
+  line-height: 1.167;
+  position: absolute;
+  left: 857.562px;
+  top: 1341.03px;
+  z-index: 48;
+}
