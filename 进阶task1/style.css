@@ -1,0 +1,31 @@
+#container
+{
+	margin: 20px;
+}
+.btn
+{
+	border-radius:3px;
+	background-color:#fff;
+	width:80px;
+	margin-right:5px;
+}
+#right_in_btn
+{
+	margin-right:40px;
+}
+#queue
+{
+	margin-top:5px;
+}
+.box      /*js创建元素所需要的类名*/
+{
+	display:inline-block;
+	min-width:40px;     /*防止数字长度太短导致不美观*/
+	height:40px;
+	background-color:#ff0000;
+	color:#fff;
+	font-size:20px;
+	text-align:center;
+	padding-top:10px;
+	margin-right:5px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>111</title>
+    <style> 
+      .num {
+        float: left;
+        border:1px solid black;
+       }
+    </style>
+  </head>
+<body>
+
+  <input id = "input"/>
+  <button id = "left-in">左侧入</button>
+  <button id = "right-in">右侧入</button>
+  <button id = "left-out">左侧出</button>
+  <button id = "right-out">右侧出</button>
+  <br/>
+  <div id = "container">
+  </div>
+<script>
+  
+  var li = document.getElementById("left-in");
+  var ri = document.getElementById("right-in");
+  var lo = document.getElementById("left-out");
+  var ro = document.getElementById("right-out");
+  var container = document.getElementById("container");
+  var input = document.getElementById("input");
+  var value = input.value;
+  var children = container.children;
+  input.addEventListener("change", function() {
+    value = input.value;
+  });
+  li.addEventListener("click", function() {
+    container.insertAdjacentHTML("afterBegin", `<span class = "num">${value}</span>`);
+  });
+  ri.addEventListener("click", function() {
+    container.insertAdjacentHTML("beforeEnd", `<span class = "num">${value}</span>`);
+  });
+  lo.addEventListener("click", function() {
+    
+    container.removeChild(children[0]);
+  });
+  ro.addEventListener("click", function() {
+    container.removeChild(children[children.length - 1]);
+  });
+  container.addEventListener("click",function(e) {
+    var target = e.target;
+    container.removeChild(target);
+ })
+    
+</script>
+</body>
+</html>
