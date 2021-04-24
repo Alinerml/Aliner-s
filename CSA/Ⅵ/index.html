@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .a{
+            height: 250px;
+            width: 16%;
+            margin: 20px ;
+            margin-bottom: 40px;
+            float: left;
+            background-size: 50% 50%;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <script>
+        var ifm=$.ajax({
+             url:'http://musicapi.leanapp.cn/personalized?limit=10',
+             type:'GET',
+             dataType:'json',
+             success:function(data){
+                 console.log(data)
+                var arry=Array[10]
+                for(let i=0;i<10;i++){
+                var img=document.createElement('img')
+                var a=document.createElement('p')
+                var b=document.createElement('p')
+                b.innerHTML='►'+data.result[i].playCount%10000+'万'
+                a.innerHTML=data.result[i].name
+                a.style="text-align:left"
+                b.style='position:relative;top:-270px;left:170px'
+                img.src=data.result[i].picUrl
+                img.style='height:220px;width:100%'
+                $('.a').eq(i).append(img)
+                $('.a').eq(i).append(a)
+                $('.a').eq(i).append(b)
+                }    
+             }
+         })
+         
+    </script>
+</body>
+</html>
