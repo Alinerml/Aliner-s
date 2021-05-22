@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
+    <style>
+
+    </style>
+</head>
+    
+<body>
+    <div id='find'>
+        <div id='search'>
+            <a href="#" class="cancle">取消</a>
+            <div class="input">
+                <span class="search-img"></span>
+                <input type="text" id="location" placeholder="搜索地区" autocomplete="off" onfocus="kongbai()"  onblur="hui()"/>
+            </div>
+            
+        </div>
+        <div id="hot">
+            <div class="history">
+                <p class="lishi">历史记录</p>
+                <span class="clean"></span>
+                <ul class="jilu">
+                    <li class="city-ls"></li>
+                    <li class="city-ls"></li>
+                    <li class="city-ls"></li>
+                </ul>
+            </div>
+            <div class="re">热门城市</div>
+            <div class="citys">
+                <ul class="remen">
+                    <li class="city-re">北京</li>
+                    <li class="city-re">上海</li>
+                    <li class="city-re">广州</li>
+                    <li class="city-re">深圳</li>
+                    <li class="city-re">郑州</li>
+                    <li class="city-re">西安</li>
+                    <li class="city-re">南京</li>
+                    <li class="city-re">杭州</li>
+                    <li class="city-re">武汉</li>
+                    <li class="city-re">成都</li>
+                    <li class="city-re">沈阳</li>
+                    <li class="city-re">天津</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="top">
+        <a class="back" href="#"><span class="iconfont">&#xe60a;</span></a>
+        <div class="dingwei">
+            <span class="iconfont daohang">&#xe602;</span>
+            <span class="position">北京市 海淀区</span>
+        </div>
+        <a class="share" href="#"><span class="iconfont" style="font-size: 26px;">&#xe6af;</span></a>
+        <div class="inf">
+            <p>中国气象台1：05发布</p>
+        </div>
+        <div class="kongqi">
+            <p>55</p>
+            <p>良</p>
+        </div>
+        <p class="tem">16°</p>
+        <p class="weather">晴</p>
+        <div class="fengxiang">
+            <p class="feng">北风0级</p>
+            <p class="shidu">湿度68%</p>
+        </div>
+        <p class="tip">你若安好，便是晴天~</p>
+    </div>
+    <div class="daytem">
+        <div class="today">
+            <div class="today1">
+                <p class="date">今天</p>
+                <p class="wendu">32/15°</p>
+            </div>
+            <div class="tianqi">
+                <p class="day-weather">多云</p>
+                <p class="weather-img">
+                    <img src="image\yun.svg" class="logo">
+                </p>
+            </div>
+        </div>
+        <div class="tommory">
+            <div class="today1">
+                <p class="date">明天</p>
+                <p class="wendu">31/17°</p>
+            </div>
+            <div class="tianqi">
+                <p class="day-weather">多云转小雨</p>
+                <p class="weather-img">
+                    <img src="image\yin.svg" class="logo">
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="hourtem">
+        <div id="qwe">
+            <ul class="ul-day">
+                <li class="item">
+                    <p class="txt-time">12:00</p>
+                    <img src="image/yun.jpg" class="weather-hour">
+                    <p class="txt-tem">22°</p>
+                </li>
+                <li class="item">
+                    <p class="txt-time">12:00</p>
+                    <img src="image/多云.svg" class="weather-hour">
+                    <p class="txt-tem">23°</p>
+                </li>
+                <li class="item">
+                    <p class="txt-time">12:00</p>
+                    <img src="image/多云.svg" class="weather-hour">
+                    <p class="txt-tem">24°</p>
+                </li>
+                <li class="item">
+                    <p class="txt-time">12:00</p>
+                    <img src="image/多云.svg" class="weather-hour">
+                    <p class="txt-tem">25°</p>
+                </li>
+                <li class="item">
+                    <p class="txt-time">12:00</p>
+                    <img src="image/多云.svg" class="weather-hour">
+                    <p class="txt-tem">26°</p>
+                </li>
+                <li class="item">
+                    <p class="txt-time">12:00</p>
+                    <img src="image/多云.svg" class="weather-hour">
+                    <p class="txt-tem">27°</p>
+                </li>
+                <li class="item">
+                    <p class="txt-time">12:00</p>
+                    <img src="image/多云.svg" class="weather-hour">
+                    <p class="txt-tem">28°</p>
+                </li>
+                <li class="item">
+                    <p class="txt-time">12:00</p>
+                    <img src="image/多云.svg" class="weather-hour">
+                    <p class="txt-tem">29°</p>
+                </li>
+                <li class="item">
+                    <p class="txt-time">12:00</p>
+                    <img src="image/多云.svg" class="weather-hour">
+                    <p class="txt-tem">30°</p>
+                </li>
+                <li class="item">
+                    <p class="txt-time">12:00</p>
+                    <img src="image/多云.svg" class="weather-hour">
+                    <p class="txt-tem">31°</p>
+                </li>
+                <li class="item">
+                    <p class="txt-time">12:00</p>
+                    <img src="image/多云.svg" class="weather-hour">
+                    <p class="txt-tem">32°</p>
+                </li>
+                <li class="item">
+                    <p class="txt-time">12:00</p>
+                    <img src="image/多云.svg" class="weather-hour">
+                    <p class="txt-tem">33°</p>
+                </li>
+                <li class="item">
+                    <p class="txt-time">12:00</p>
+                    <img src="image/多云.svg" class="weather-hour">
+                    <p class="txt-tem">34°</p>
+                </li>
+                <li class="item">
+                    <p class="txt-time">12:00</p>
+                    <img src="image/多云.svg" class="weather-hour">
+                    <p class="txt-tem">35°</p>
+                </li>
+                <li class="item">
+                    <p class="txt-time">12:00</p>
+                    <img src="image/多云.svg" class="weather-hour">
+                    <p class="txt-tem">36°</p>
+                </li>
+                <li class="item">
+                    <p class="txt-time">12:00</p>
+                    <img src="image/多云.svg" class="weather-hour">
+                    <p class="txt-tem">37°</p>
+                </li>
+                <li class="item">
+                    <p class="txt-time">12:00</p>
+                    <img src="image/多云.svg" class="weather-hour">
+                    <p class="txt-tem">38°</p>
+                </li>
+                <li class="item">
+                    <p class="txt-time">12:00</p>
+                    <img src="image/多云.svg" class="weather-hour">
+                    <p class="txt-tem">39°</p>
+                </li>
+                <li class="item">
+                    <p class="txt-time">12:00</p>
+                    <img src="image/多云.svg" class="weather-hour">
+                    <p class="txt-tem">40°</p>
+                </li>
+                <li class="item">
+                    <p class="txt-time">12:00</p>
+                    <img src="image/多云.svg" class="weather-hour">
+                    <p class="txt-tem">41°</p>
+                </li>
+                <li class="item">
+                    <p class="txt-time">12:00</p>
+                    <img src="image/多云.svg" class="weather-hour">
+                    <p class="txt-tem">42°</p>
+                </li>
+                <li class="item">
+                    <p class="txt-time">12:00</p>
+                    <img src="image/多云.svg" class="weather-hour">
+                    <p class="txt-tem">43°</p>
+                </li>
+                <li class="item">
+                    <p class="txt-time">12:00</p>
+                    <img src="image/多云.svg" class="weather-hour">
+                    <p class="txt-tem">44°</p>
+                </li>
+                <li class="item">
+                    <p class="txt-time">12:00</p>
+                    <img src="image/多云.svg" class="weather-hour">
+                    <p class="txt-tem">45°</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="zhexian">
+        <div id="tt">
+        <div id="asd">
+            <div id="lol">
+            <div id="main"></div>
+            <ul class="ul-week">
+                <li class="weather-zhexian">
+                    <p class="day day0">昨天</p>
+                    <p class="date-zhexian">05/17</p>
+                    <p class="weather-morning ">晴</p>
+                    <img src="image/qing.svg" alt="" class="icon">
+                    <img src="image/qing夜.svg" alt="" class="img-night">
+                    <p class="weather-night ">晴</p>
+                    <p class="wind">西南风</p>
+                    <p class="winds">3级</p>
+                </li>
+                <li class="weather-zhexian">
+                    <p class="day day1">今天</p>
+                    <p class="date-zhexian">05/17</p>
+                    <p class="weather-morning teshu">晴</p>
+                    <img src="image/晴.svg" alt="" class="icon">
+                    <img src="image/晴夜.svg" alt="" class="img-night">
+                    <p class="weather-night teshu">晴</p>
+                    <p class="wind">西南风</p>
+                    <p class="winds">3级</p>
+                </li>
+                <li class="weather-zhexian">
+                    <p class="day day2">明天</p>
+                    <p class="date-zhexian">05/17</p>
+                    <p class="weather-morning teshu">晴</p>
+                    <img src="image/晴.svg" alt="" class="icon">
+                    <img src="image/晴夜.svg" alt="" class="img-night">
+                    <p class="weather-night teshu">晴</p>
+                    <p class="wind">西南风</p>
+                    <p class="winds">3级</p>
+                </li>
+                <li class="weather-zhexian">
+                    <p class="day day3">后天</p>
+                    <p class="date-zhexian">05/17</p>
+                    <p class="weather-morning teshu">晴</p>
+                    <img src="image/晴.svg" alt="" class="icon">
+                    <img src="image/晴夜.svg" alt="" class="img-night">
+                    <p class="weather-night teshu">晴</p>
+                    <p class="wind">西南风</p>
+                    <p class="winds">3级</p>
+                </li>
+                <li class="weather-zhexian">
+                    <p class="day day4">星期一</p>
+                    <p class="date-zhexian">05/17</p>
+                    <p class="weather-morning teshu">晴</p>
+                    <img src="image/晴.svg" alt="" class="icon">
+                    <img src="image/晴夜.svg" alt="" class="img-night">
+                    <p class="weather-night teshu">晴</p>
+                    <p class="wind">西南风</p>
+                    <p class="winds">3级</p>
+                </li>
+                <li class="weather-zhexian">
+                    <p class="day day5">星期二</p>
+                    <p class="date-zhexian">05/17</p>
+                    <p class="weather-morning teshu">晴</p>
+                    <img src="image/晴.svg" alt="" class="icon">
+                    <img src="image/晴夜.svg" alt="" class="img-night">
+                    <p class="weather-night teshu">晴</p>
+                    <p class="wind">西南风</p>
+                    <p class="winds">3级</p>
+                </li>
+                <li class="weather-zhexian">
+                    <p class="day day6">星期三</p>
+                    <p class="date-zhexian">05/17</p>
+                    <p class="weather-morning teshu">晴</p>
+                    <img src="image/晴.svg" alt="" class="icon">
+                    <img src="image/晴夜.svg" alt="" class="img-night">
+                    <p class="weather-night teshu">晴</p>
+                    <p class="wind">西南风</p>
+                    <p class="winds">3级</p>
+                </li>
+                <li class="weather-zhexian">
+                    <p class="day day7">星期四</p>
+                    <p class="date-zhexian">05/17</p>
+                    <p class="weather-morning teshu">晴</p>
+                    <img src="image/晴.svg" alt="" class="icon">
+                    <img src="image/晴夜.svg" alt="" class="img-night">
+                    <p class="weather-night teshu">晴</p>
+                    <p class="wind">西南风</p>
+                    <p class="winds">3级</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+        </div>
+    </div>
+    <div id="pop">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <ul class="hl">
+                        <li class="gezi">
+                            <span class="iconfont1">&#xe65f;</span>
+                            <p class="content">不宜</p>
+                            <p class="title">晨练</p>
+                        </li>
+                        <li class="gezi">
+                            <span class="iconfont1">&#xe644;</span>
+                            <p class="content">炎热</p>
+                            <p class="title">穿衣</p>
+                        </li>
+                        <li class="gezi">
+                            <span class="iconfont1">&#xe648;</span>
+                            <p class="content">不带伞</p>
+                            <p class="title">雨伞</p>
+                        </li>
+                        <li class="gezi">
+                            <span class="iconfont1">&#xe608;</span>
+                            <p class="content">少发</p>
+                            <p class="title">感冒</p>
+                        </li>
+                        <li class="gezi">
+                            <span class="iconfont1">&#xe708;</span>
+                            <p class="content">较适宜</p>
+                            <p class="title">洗车</p>
+                        </li>
+                        <li class="gezi">
+                            <span class="iconfont1">&#xe604;</span>
+                            <p class="content">较适宜</p>
+                            <p class="title">运动</p>
+                        </li>
+                        <li class="gezi">
+                            <span class="iconfont1">&#xe833;</span>
+                            <p class="content">中等</p>
+                            <p class="title">防晒</p>
+                        </li>
+                        <li class="gezi">
+                            <span class="iconfont1">&#xe603;</span>
+                            <p class="content">较适宜</p>
+                            <p class="title">钓鱼</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul class="hl">
+                        <li class="gezi">
+                            <span class="iconfont1">&#xe686;</span>
+                            <p class="content">适宜</p>
+                            <p class="title">旅游</p>
+                        </li>
+                        <li class="gezi">
+                            <span class="iconfont1">&#xe605;</span>
+                            <p class="content">良好</p>
+                            <p class="title">交通</p>
+                        </li>
+                        <li class="gezi">
+                            <span class="iconfont1">&#xea4c;</span>
+                            <p class="content">中</p>
+                            <p class="title">空气污染扩散条件</p>
+                        </li>
+                        <li class="gezi">
+                            <span class="iconfont1">&#xe748;</span>
+                            <p class="content">较不舒适</p>
+                            <p class="title">舒适度</p>
+                        </li>
+                        <li class="gezi">
+                            <span class="iconfont1">&#xe702;</span>
+                            <p class="content">适宜</p>
+                            <p class="title">晾晒</p>
+                        </li>
+                        <li class="gezi">
+                            <span class="iconfont1">&#xe620;</span>
+                            <p class="content">防脱水</p>
+                            <p class="title">化妆</p>
+                        </li>
+                        <li class="gezi">
+                            <span class="iconfont1">&#xe9fb;</span>
+                            <p class="content">无中暑风险</p>
+                            <p class="title">中暑</p>
+                        </li>
+                        <li class="gezi">
+                            <span class="iconfont1">&#xe65c;</span>
+                            <p class="content">较易发</p>
+                            <p class="title">过敏</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+        </div>
+        <div class="gang  swiper-pagination">
+            <span class="tiao"></span>
+            <span class="tiao"></span>
+        </div>
+    </div>
+    <!-- <div class="huangli">
+        <div id="show">
+            <div class="contain">
+                <ul class="hl">
+                    <li class="gezi">
+                        <span class="iconfont1">&#xe6d2;</span>
+                        <p class="content">3和8</p>
+                        <p class="title">尾号限行</p>
+                    </li>
+                    <li class="gezi">
+                        <span class="iconfont1">&#xe644;</span>
+                        <p class="content">炎热</p>
+                        <p class="title">穿衣</p>
+                    </li>
+                    <li class="gezi">
+                        <span class="iconfont1">&#xe648;</span>
+                        <p class="content">不带伞</p>
+                        <p class="title">雨伞</p>
+                    </li>
+                    <li class="gezi">
+                        <span class="iconfont1">&#xe608;</span>
+                        <p class="content">少发</p>
+                        <p class="title">感冒</p>
+                    </li>
+                    <li class="gezi">
+                        <span class="iconfont1">&#xe708;</span>
+                        <p class="content">较适宜</p>
+                        <p class="title">洗车</p>
+                    </li>
+                    <li class="gezi">
+                        <span class="iconfont1">&#xe604;</span>
+                        <p class="content">较适宜</p>
+                        <p class="title">运动</p>
+                    </li>
+                    <li class="gezi">
+                        <span class="iconfont1">&#xe833;</span>
+                        <p class="content">中等</p>
+                        <p class="title">防晒</p>
+                    </li>
+                    <li class="gezi">
+                        <span class="iconfont1">&#xe603;</span>
+                        <p class="content">较适宜</p>
+                        <p class="title">钓鱼</p>
+                    </li>
+                </ul>
+                <ul class="hl">
+                    <li class="gezi">
+                        <span class="iconfont1">&#xe686;</span>
+                        <p class="content">适宜</p>
+                        <p class="title">旅游</p>
+                    </li>
+                    <li class="gezi">
+                        <span class="iconfont1">&#xe605;</span>
+                        <p class="content">良好</p>
+                        <p class="title">交通</p>
+                    </li>
+                    <li class="gezi">
+                        <span class="iconfont1">&#xea4c;</span>
+                        <p class="content">中</p>
+                        <p class="title">空气污染扩散条件</p>
+                    </li>
+                    <li class="gezi">
+                        <span class="iconfont1">&#xe748;</span>
+                        <p class="content">较不舒适</p>
+                        <p class="title">舒适度</p>
+                    </li>
+                    <li class="gezi">
+                        <span class="iconfont1">&#xe702;</span>
+                        <p class="content">适宜</p>
+                        <p class="title">晾晒</p>
+                    </li>
+                    <li class="gezi">
+                        <span class="iconfont1">&#xe620;</span>
+                        <p class="content">防脱水</p>
+                        <p class="title">化妆</p>
+                    </li>
+                    <li class="gezi">
+                        <span class="iconfont1">&#xe9fb;</span>
+                        <p class="content">无中暑风险</p>
+                        <p class="title">中暑</p>
+                    </li>
+                    <li class="gezi">
+                        <span class="iconfont1">&#xe65c;</span>
+                        <p class="content">较易发</p>
+                        <p class="title">过敏</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="gang">
+        <span class="tiao"></span>
+        <span class="tiao"></span>
+    </div> -->
+    <div class="tail">
+        <div class="links">
+            <a href="http://m.weather.com.cn/" class="source">数据来源于中国天气网</a>
+        </div>
+        <div class="copyright">
+            Copyright © 1998 - 2021 Tencent. All Rights Reserved
+        </div>
+    </div>
+    <script type="text/javascript" src="./bower_components/mockjs/dist/mock.js"></script>
+    <script>
+        var shuju=Mock.mock({
+            "number|10-30":2})
+        console.log(shuju)
+    </script>
+    <script src="echarts.min.js"></script>
+    <script src="script.js"></script>
+    <script src="swiper-bundle.min.js"></script>
+    <script>
+        (function () {
+            var swiper = new Swiper('.swiper-container', {
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    renderBullet: function (index, className) {
+                        return '<span class="' + className + '">' + '</span>';
+                    },
+                },
+            });
+        })();
+
+    </script>
+    <script>
+        var dingwei = document.getElementsByClassName("dingwei")
+        $('.clean')[0].onclick=function(){
+            lishi=['','',''];
+            $(".history").css("display","none");
+        }
+        dingwei[0].onclick= function(){
+            for(let i=0;i<3;i++){
+                $('.city-ls')[i].innerHTML=lishi[i];
+            }
+            if($(".city-ls")[0].innerHTML==''){
+                $(".history").css("display","none");
+            }
+            else{
+                for(let i=0;i<3;i++){
+                    if($('.city-ls')[i].innerHTML=='')
+                    {
+                        $('.city-ls').eq(i).css("background-color","white");
+                    }
+                    else{
+                        $('.city-ls').eq(i).css("background-color","#f2f2f2");
+                    }
+                }
+                $(".history").css("display","block");
+            }
+            var sousuo=document.getElementById('find');
+            sousuo.style.display="block";
+            sousuo.style.animation="sou 0.4s"
+        }
+        document.getElementsByClassName("cancle")[0].onclick=function(){
+            document.getElementById('find').style.animation="fan 0.4s";
+            setTimeout(function(){document.getElementById('find').style.display="none"},400)
+            
+        }
+        
+    </script>
+    <script>
+        function kongbai(){
+            $('.history,.re,.citys').css("display","none");
+            document.addEventListener("keyup",function(e){
+                console.log(e);
+                if(e.key=='Enter')
+                {
+                    var city = $("#location")[0].value;
+                    lishi.unshift(city);
+                    console.log(lishi);
+                    $.ajax({
+                        
+                        type:"GET",
+                        async:true,
+                        url:"https://tianqiapi.com/free/day?appid=22188373&appsecret=DRxS8w3O&city="+city,
+                        success:function(data){
+                            console.log(data);
+                            cityid=data.cityid;
+                            document.getElementById('find').style.display = "none";
+                            show(cityid);
+                        }
+                    })
+                }
+            })
+        }
+        function hui(){
+            $('.history,.re,.citys').css("display","block");
+        }
+    </script>
+    
+</body>
+
+</html>
